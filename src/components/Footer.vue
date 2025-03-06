@@ -10,17 +10,16 @@
 
         <!-- Contact Button -->
         <div class="mb-12 sm:mb-16 lg:mb-20">
-          <a href="#contact" class="inline-block bg-white text-black px-6 sm:px-8 py-3 text-sm sm:text-base rounded-full hover:bg-gray-100 transition-colors">
-            <router-link to="/contact">Contact Me</router-link>
-          </a>
+          <router-link to="/contact" class="inline-block bg-white text-black px-6 sm:px-8 py-3 text-sm sm:text-base rounded-full hover:bg-gray-100 transition-colors">
+          Contact Me
+      </router-link>
         </div>
 
         <!-- Social Links -->
         <div class="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 lg:mb-20">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors text-base sm:text-lg">Instagram</a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors text-base sm:text-lg">LinkedIn</a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors text-base sm:text-lg">Facebook</a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors text-base sm:text-lg">Dribbble</a>
+          <a href="https://www.instagram.com/ru.uss/" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.linkedin.com/in/rhazel-alforoque-000643295/" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+          <a href="https://www.facebook.com/rhazel.alforque" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Facebook</a>
         </div>
 
         <!-- Contact Info -->
@@ -46,7 +45,7 @@
       </div>
 
       <!-- Bottom Navigation -->
-      <div class="flex justify-center mb-6 sm:mb-8 lg:mb-10">
+      <div class="flex justify-center mb-10 sm:mb-8 lg:mb-10">
         <a href="#" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base">
           <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-gray-800 flex items-center justify-center">
             <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

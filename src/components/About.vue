@@ -5,7 +5,12 @@
         <div class="transition-all duration-500" 
              :class="{ 'translate-y-0 opacity-100': isVisible, 'translate-y-10 opacity-0': !isVisible }"
              :style="{ transitionDelay: '200ms' }">
+           <div class="flex gap-2">
+            <svg class="w-4 sm:w-5 h-4 sm:h-5 text-gray-400" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z"/>
+          </svg>
           <p class="text-gray-400 mb-2 tracking-wide text-sm sm:text-base">I'M RHAZEL</p>
+           </div>
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">About Me</h1>
         </div>
         
@@ -13,25 +18,26 @@
           <div class="space-y-4 sm:space-y-6 transition-all duration-500"
                :class="{ 'translate-y-0 opacity-100': isVisible, 'translate-y-10 opacity-0': !isVisible }"
                :style="{ transitionDelay: '400ms' }">
-            <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+               
+               <p class="text-gray-400 text-base sm:text-lg md:text-sm lg:text-lg leading-relaxed">
               I'm Rhazel, a recently graduated BSIT student with a passion for web development and UI design. Throughout my academic journey, I have developed a strong foundation in front-end and back-end technologies, allowing me to build functional and visually appealing applications.
             </p>
             
-            <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+            <p class="text-gray-400 text-base sm:text-lg md:text-sm lg:text-lg leading-relaxed">
               My approach focuses on problem-solving, efficiency, and leveraging modern tools to create seamless user experiences. I thrive on learning new technologies, refining my skills, and staying updated with industry trends.
             </p>
             
-            <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
+            <p class="text-gray-400 text-base sm:text-lg md:text-sm lg:text-lg leading-relaxed">
               I am eager to take on new challenges, collaborate with like-minded individuals, and contribute to innovative projects that make an impact. Whether it's designing interactive user interfaces or developing efficient web solutions, I'm excited to turn ideas into reality.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-2 mt-6 sm:mt-20">
               <a href="mailto:russavenido@gmail.com" 
-                 class="px-4 sm:px-6 py-2 bg-black border border-gray-700 rounded-full text-gray-300 hover:border-gray-500 hover:text-white transition-all duration-300 text-sm sm:text-base text-center sm:text-left hover:-translate-y-0.5">
+                 class="px-4 sm:px-6 md:px-4 py-2 bg-black border border-gray-700 rounded-full text-gray-200 hover:border-gray-500 hover:text-white transition-all duration-300 text-sm sm:text-base text-center sm:text-left hover:-translate-y-0.5">
                 russavenido@gmail.com
               </a>
               <a href="tel:+1234567890" 
-                 class="px-4 sm:px-6 py-2 bg-black border border-gray-700 rounded-full text-gray-300 hover:border-gray-500 hover:text-white transition-all duration-300 text-sm sm:text-base text-center sm:text-left hover:-translate-y-0.5">
+                 class="px-4 sm:px-6 py-2 bg-black border border-gray-700 rounded-full text-gray-200 hover:border-gray-500 hover:text-white transition-all duration-300 text-sm sm:text-base text-center sm:text-left hover:-translate-y-0.5">
                 09178903212
               </a>
             </div>
@@ -46,8 +52,6 @@
                 <span class="hover:text-white transition-colors duration-300">React</span>
                 <span class="text-gray-600">/</span>
                 <span class="hover:text-white transition-colors duration-300">TypeScript</span>
-                <span class="text-gray-600">/</span>
-                <span class="hover:text-white transition-colors duration-300">MongoDB</span>
               </div>
             </div>
           </div>
@@ -58,7 +62,7 @@
             <img 
               src="@/assets/images/Rhazel.jpg" 
               alt="Profile" 
-              class="w-full md:w-3/4 h-[40vh] sm:h-[50vh] md:h-[60vh] object-cover shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
+              class="w-full md:w-full lg:w-full xl:w-3/4 h-[40vh] sm:h-[50vh] md:h-[55vh] object-cover rounded-md shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
             >
           </div>
         </div>
@@ -75,8 +79,7 @@
             </svg>
             <span class="text-gray-400 text-sm sm:text-base">ABOUT</span>
           </div>
-          <a href="#portfolio" 
-             class="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base">
+          <router-link to="/service" class="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base">
             <span>Next</span>
             <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4 transform group-hover:translate-x-1 transition-transform" 
                  viewBox="0 0 24 24" 
@@ -85,7 +88,7 @@
                  stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

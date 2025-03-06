@@ -4,16 +4,16 @@
     <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
       <div class="max-w-8xl mx-auto">
         <!-- Profile Section -->
-        <div class="mb-8 sm:mb-16 fade-in">
+        <div class="mb-8 sm:mb-8 fade-in">
           <img src="/images/Rhazel.jpg" alt="Profile" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-6 profile-image">
           <div class="space-y-1 sm:space-y-2">
-            <h2 class="text-xl sm:text-2xl font-medium slide-up">I'm Russ Alforque 👋</h2>
+            <h2 class="text-xl sm:text-base text-gray-400 slide-up">I'm Russ Alforque 👋</h2>
             <p class="text-gray-400 text-sm sm:text-base slide-up" style="animation-delay: 0.2s">UI/UX & Web Developer.</p>
           </div>
         </div>
 
         <!-- Hero Text -->
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight mb-8 sm:mb-12 max-w-4xl slide-up" style="animation-delay: 0.4s">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-tight mb-8 sm:mb-12 max-w-4xl slide-up" style="animation-delay: 0.4s">
           Designing and developing innovative solutions for visionary brands and projects.
         </h1>
 
@@ -28,7 +28,7 @@
         </router-link>
 
         <!-- Portfolio Grid -->
-        <div class="mt-12 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div class="mt-12 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           <div v-for="(project, index) in portfolioProjects" 
                :key="index" 
                :style="{ animationDelay: `${0.8 + index * 0.2}s` }"
@@ -39,27 +39,27 @@
         </div>
 
         <!-- Bottom Stats -->
-        <div class="mt-12 sm:mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 border-t border-gray-800 pt-8 sm:pt-12">
-          <div v-for="(_, index) in 3" 
+        <div class="mt-12 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 border-t border-gray-800 pt-8 sm:pt-12">
+          <div v-for="(_, index) in 1" 
                :key="index"
                :style="{ animationDelay: `${1.6 + index * 0.2}s` }"
                class="flex items-center space-x-3 sm:space-x-4 fade-in-left">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
-            <p class="text-sm sm:text-base">Senior Product Designer @tyler_hawkins</p>
+            <p class="text-sm sm:text-base">Product Designer @russ_al4k</p>
           </div>
           <div class="flex items-center space-x-3 sm:space-x-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <p class="text-sm sm:text-base">12 Years of Designing Experties</p>
+            <p class="text-sm sm:text-base">1 Year of Designing Experties</p>
           </div>
           <div class="flex items-center space-x-3 sm:space-x-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <p class="text-sm sm:text-base">97% Client Satisfaction</p>
+            <p class="text-sm sm:text-base">2% Client Satisfaction</p>
           </div>
         </div>
       </div>

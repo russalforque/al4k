@@ -59,8 +59,7 @@
             </svg>
             <span class="text-gray-400 text-sm sm:text-base">SERVICES</span>
           </div>
-          <a href="#contact" 
-             class="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base">
+         <router-link to="/contact"  class="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base">
             <span>Next</span>
             <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4 transform group-hover:translate-x-1 transition-transform" 
                  viewBox="0 0 24 24" 
@@ -69,7 +68,7 @@
                  stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </a>
+          </router-link>  
         </div>
       </div>
     </div>
@@ -81,8 +80,8 @@
 import PragramImg from '@/assets/images/Pragram.png'
 import WebImg from '@/assets/images/Web.png'
 import DatabaseImg from '@/assets/images/database-management.png'
-import GithubImg from '@/assets/images/github.png'
-import VueImg from '@/assets/images/Vue.png'
+import GithubImg from '@/assets/images/social.png'
+import VueImg from '@/assets/images/VueJs.png'
 import TailwindImg from '@/assets/images/Tailwindcss.png'
 import FigmaImg from '@/assets/images/Figmaa.png'
 import PhotoshopImg from '@/assets/images/Photoshopp.png'
@@ -179,7 +178,7 @@ export default {
           description: 'Creating impactful visual assets and branding',
           image: PhotoshopImg,
           techStack: ['Photoshop', 'Illustrator', 'Web Graphics']
-        }
+        },
       ]
     }
   }

@@ -9,10 +9,9 @@
 
       <!-- Social Links -->
       <div class="flex flex-wrap gap-4 sm:gap-8 mb-10 sm:mb-16">
-        <a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Instagram</a>
-        <a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-        <a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Facebook</a>
-        <a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Dribbble</a>
+        <a href="https://www.instagram.com/ru.uss/" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Instagram</a>
+        <a href="https://www.linkedin.com/in/rhazel-alforoque-000643295/" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+        <a href="https://www.facebook.com/rhazel.alforque" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Facebook</a>
       </div>
 
       <!-- Two Column Layout -->
@@ -109,12 +108,14 @@
             ></textarea>
           </div>
 
-          <button 
+          <div class="flex justify-end">
+            <button 
             @click="handleSubmit"
-            class="bg-black text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 text-sm sm:text-base hover:bg-gray-900 hover:-translate-y-0.5"
+            class="bg-black mb-20 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 text-sm sm:text-base hover:bg-gray-900 hover:-translate-y-0.5"
           >
             Submit Now
           </button>
+          </div>
         </div>
       </div>
     </div>

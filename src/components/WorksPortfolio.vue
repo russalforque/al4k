@@ -8,7 +8,7 @@
           </svg>
           <p class="text-gray-400 tracking-wide text-sm sm:text-base">CREATIONS</p>
         </div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-light mb-8 sm:mb-12 md:mb-16">My Selected Works</h1>
+        <h1 class="text-4xl sm:text-5xl md:text-5xl font-light mb-8 sm:mb-12 md:mb-16">My Selected Works</h1>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           <div v-for="(project, index) in projects" 
@@ -88,37 +88,39 @@ export default {
     return {
       projects: [
         {
-          title: 'FitQuest',
-          description: 'A fitness app showcasing workout plans and nutrition advice.',
-          media: '/images/portfolioprofile.png',
+          title: 'TaskFlow',
+          description: 'A task flow app designed to help users organize and plot their schedules and tasks efficiently.',
+          media: '/images/taskflow.png',
           category: 'UI/UX',
           type: 'image',
           link: 'https://www.figma.com/proto/CCcEyy6M9UREEkp708GFar/Untitled?node-id=0-1&t=PXrr8Qsf06fQMaQz-1'
         },
         {
-          title: 'HealthHaven',
-          description: 'A wellness site offering resources for mental and physical health.',
-          media: '/images/webworkss.png',
+          title: 'VinoHaven',
+          description: 'A mobile app designed for a wine shop, offering a seamless browsing and shopping experience for wine enthusiasts',
+          media: '/images/VinoHaven.png',
           category: 'Web Development',
           type: 'image',
           link: 'https://russ152002.github.io/latina/ww.html'
         },
         {
-          title: 'GameNest',
-          description: 'A community platform for gamers to connect and share experiences.',
-          media: '/videos/TimesheetOptimization.mp4',
-          category: 'Full Stack',
-          type: 'video',
-          link: '#'
+          title: 'VinoHaven',
+          description: 'A mobile app designed for a wine shop, offering a seamless browsing and shopping experience for wine enthusiasts',
+          media: '/images/VinoHaven.png',
+          category: 'Web Development',
+          type: 'image',
+          link: 'https://russ152002.github.io/latina/ww.html'
         },
         {
-          title: 'GameNest',
-          description: 'A community platform for gamers to connect and share experiences.',
-          media: '/videos/TimesheetOptimization.mp4',
-          category: 'Full Stack',
-          type: 'video',
-          link: '#'
-        }
+          title: 'TaskFlow',
+          description: 'A task flow app designed to help users organize and plot their schedules and tasks efficiently.',
+          media: '/images/taskflow.png',
+          category: 'UI/UX',
+          type: 'image',
+          link: 'https://www.figma.com/proto/CCcEyy6M9UREEkp708GFar/Untitled?node-id=0-1&t=PXrr8Qsf06fQMaQz-1'
+        },
+   
+       
       ]
     }
   }

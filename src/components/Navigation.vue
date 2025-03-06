@@ -2,7 +2,7 @@
   <nav :class="[
     'fixed left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300',
     isMobile ? 'bottom-0' : 'bottom-2 xxs:bottom-3 xs:bottom-4 sm:bottom-6 md:bottom-8',
-    isMobile ? 'w-full' : 'w-full xxs:w-[98%] xs:w-[95%] sm:w-[90%] md:w-[85%] lg:w-auto max-w-screen-lg'
+    isMobile ? 'w-full' : 'w-full xxs:w-[98%] xs:w-[95%] sm:w-[51%] md:w-[57%] lg:w-auto max-w-screen-lg'
   ]">
     <!-- Mobile Navigation -->
     <div v-if="isMobile" class="bg-black/90 backdrop-blur-lg border-t border-white/10">
@@ -98,11 +98,11 @@ export default {
   data() {
     return {
       menuItems: [
-        { name: 'Home', path: '/', icon: HomeIcon },
-        { name: 'Works', path: '/works', icon: BriefcaseIcon },
-        { name: 'About', path: '/about', icon: UserIcon },
-        { name: 'Service', path: '/service', icon: WrenchScrewdriverIcon },
-        { name: 'Contact', path: '/contact', icon: EnvelopeIcon },
+        { name: '', path: '/', icon: HomeIcon },
+        { name: '', path: '/works', icon: BriefcaseIcon },
+        { name: '', path: '/about', icon: UserIcon },
+        { name: '', path: '/service', icon: WrenchScrewdriverIcon },
+        { name: '', path: '/contact', icon: EnvelopeIcon },
       ],
       isMobile: false
     }
