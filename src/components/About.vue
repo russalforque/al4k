@@ -1,25 +1,25 @@
 <template>
-  <div class="min-h-screen bg-black text-white py-8 sm:py-12 md:py-16 px-3 sm:px-4" v-show="isVisible" ref="sectionRef">
-    <div class="container mx-auto max-w-6xl">
-      <div class="mb-12 sm:mb-16 md:mb-20">
-        <div class="transition-all duration-500" 
-             :class="{ 'translate-y-0 opacity-100': isVisible, 'translate-y-10 opacity-0': !isVisible }"
-             :style="{ transitionDelay: '200ms' }">
-           <div class="flex gap-2">
+  <div class="min-h-screen bg-black text-white py-8 sm:py-12 md:py-16 px-3 sm:px-4">
+    <transition
+      name="fade-up"
+      appear
+      mode="out-in"
+      @enter="onEnter"
+    >
+      <div class="container mx-auto max-w-6xl">
+        <div class="mb-12 sm:mb-16 md:mb-20">
+          <div class="flex gap-2">
             <svg class="w-4 sm:w-5 h-4 sm:h-5 text-gray-400" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z"/>
-          </svg>
-          <p class="text-gray-400 mb-2 tracking-wide text-sm sm:text-base">I'M RHAZEL</p>
-           </div>
+              <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z"/>
+            </svg>
+            <p class="text-gray-400 mb-2 tracking-wide text-sm sm:text-base">I'M RHAZEL</p>
+          </div>
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8">About Me</h1>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
-          <div class="space-y-4 sm:space-y-6 transition-all duration-500"
-               :class="{ 'translate-y-0 opacity-100': isVisible, 'translate-y-10 opacity-0': !isVisible }"
-               :style="{ transitionDelay: '400ms' }">
-               
-               <p class="text-gray-400 text-base sm:text-lg md:text-sm lg:text-lg leading-relaxed">
+          <div class="space-y-4 sm:space-y-6">
+            <p class="text-gray-400 text-base sm:text-lg md:text-sm lg:text-lg leading-relaxed">
               I'm Rhazel, a recently graduated BSIT student with a passion for web development and UI design. Throughout my academic journey, I have developed a strong foundation in front-end and back-end technologies, allowing me to build functional and visually appealing applications.
             </p>
             
@@ -56,9 +56,7 @@
             </div>
           </div>
 
-          <div class="relative mt-8 md:mt-0 transition-all duration-500"
-               :class="{ 'translate-x-0 opacity-100': isVisible, 'translate-x-10 opacity-0': !isVisible }"
-               :style="{ transitionDelay: '600ms' }">
+          <div class="relative mt-8 md:mt-0">
             <img 
               src="@/assets/images/Rhazel.jpg" 
               alt="Profile" 
@@ -67,31 +65,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Component Footer -->
-      <div class="mt-16 sm:mt-24 md:mt-32 pt-8 sm:pt-12 md:pt-16 border-t border-gray-800 transition-all duration-500"
-           :class="{ 'translate-y-0 opacity-100': isVisible, 'translate-y-10 opacity-0': !isVisible }"
-           :style="{ transitionDelay: '800ms' }">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <svg class="w-4 sm:w-5 h-4 sm:h-5 text-gray-400" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z"/>
-            </svg>
-            <span class="text-gray-400 text-sm sm:text-base">ABOUT</span>
-          </div>
-          <router-link to="/service" class="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base">
-            <span>Next</span>
-            <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4 transform group-hover:translate-x-1 transition-transform" 
-                 viewBox="0 0 24 24" 
-                 fill="none" 
-                 stroke="currentColor" 
-                 stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </router-link>
-        </div>
-      </div>
-    </div>
+    </transition>
     
     <!-- Main Footer -->
     <Footer />
@@ -100,56 +74,52 @@
 
 <script>
 import Footer from './Footer.vue'
-import { ref, onMounted, onUnmounted } from 'vue'
 
 export default {
   name: 'AboutSection',
   components: {
     Footer
   },
-  setup() {
-    const isVisible = ref(true)
-    const sectionRef = ref(null)
-    let observer = null
-    
-    onMounted(() => {
-      observer = new IntersectionObserver(
-        (entries) => {
-          const [entry] = entries
-          if (!window.location.pathname.includes('/about')) {
-            isVisible.value = entry.isIntersecting
-          }
-        },
-        {
-          threshold: 0.1,
-          rootMargin: '50px'
-        }
-      )
-
-      if (sectionRef.value) {
-        observer.observe(sectionRef.value)
-      }
-    })
-
-    onUnmounted(() => {
-      if (observer) {
-        observer.disconnect()
-      }
-    })
-
-    return {
-      isVisible,
-      sectionRef
+  methods: {
+    onEnter(el) {
+      el.style.opacity = '0'
+      el.style.transform = 'translateY(20px)'
+      setTimeout(() => {
+        el.style.opacity = '1'
+        el.style.transform = 'translateY(0)'
+      }, 50)
     }
   }
 }
 </script>
 
 <style scoped>
+/* Fade up transition */
+.fade-up-enter-active,
+.fade-up-leave-active {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-up-enter-from,
+.fade-up-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-up-enter-to,
+.fade-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure the container has the correct initial state */
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  opacity: 1;
+  transform: translateY(0);
+  will-change: transform, opacity;
 }
 
 /* Responsive adjustments */
@@ -158,46 +128,6 @@ export default {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-/* Base transitions */
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-/* Transform transitions */
-.translate-y-0 {
-  transform: translateY(0);
-}
-
-.translate-y-10 {
-  transform: translateY(40px);
-}
-
-.translate-x-0 {
-  transform: translateX(0);
-}
-
-.translate-x-10 {
-  transform: translateX(40px);
-}
-
-/* Opacity transitions */
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 /* Hover effects */
