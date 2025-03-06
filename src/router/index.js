@@ -38,7 +38,10 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.NODE_ENV === 'production' ? '/al4k/' : '/'),
-  routes
+  routes,
+  scrollBehavior() {
+    return { top: 0 }
+  }
 })
 
 // Navigation guard to ensure scroll reset

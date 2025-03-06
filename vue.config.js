@@ -2,7 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/al4k/'  // Replace 'al4k' with your repository name
+    ? '/al4k/'  // Replace with your exact repository name
     : '/',
   configureWebpack: {
     module: {
