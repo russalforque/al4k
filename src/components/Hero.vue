@@ -5,7 +5,7 @@
       <div class="max-w-8xl mx-auto">
         <!-- Profile Section -->
         <div class="mb-8 sm:mb-8 fade-in">
-          <img src="/images/Rhazel.jpg" alt="Profile" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-6 profile-image">
+          <img src="@/assets/images/Rhazel.jpg" alt="Profile" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-6 profile-image">
           <div class="space-y-1 sm:space-y-2">
             <h2 class="text-xl sm:text-base text-gray-400 slide-up">I'm Russ Alforque 👋</h2>
             <p class="text-gray-400 text-sm sm:text-base slide-up" style="animation-delay: 0.2s">UI/UX & Web Developer.</p>
@@ -81,19 +81,19 @@ export default {
       portfolioProjects: [
         {
           title: 'MacBook Pro Mockup',
-          image: '/images/smartphoneUI.jpg'
+          image: require('@/assets/images/smartphoneUI.jpg')
         },
         {
           title: 'Mac Design',
-          image: '/images/UserInterfaceOne.png'
+          image: require('@/assets/images/UserInterfaceOne.png')
         },
         {
           title: 'Laptop Display',
-          image: '/images/psd.jpg'
+          image: require('@/assets/images/psd.jpg')
         },
         {
           title: 'High Resolution',
-          image: '/images/lina.jpg'
+          image: require('@/assets/images/lina.jpg')
         }
       ]
     }

@@ -90,7 +90,7 @@ export default {
         {
           title: 'TaskFlow',
           description: 'A task flow app designed to help users organize and plot their schedules and tasks efficiently.',
-          media: '/images/taskflow.png',
+          media: require('@/assets/images/taskflow.png'),
           category: 'UI/UX',
           type: 'image',
           link: 'https://www.figma.com/proto/CCcEyy6M9UREEkp708GFar/Untitled?node-id=0-1&t=PXrr8Qsf06fQMaQz-1'
@@ -98,7 +98,7 @@ export default {
         {
           title: 'VinoHaven',
           description: 'A mobile app designed for a wine shop, offering a seamless browsing and shopping experience for wine enthusiasts',
-          media: '/images/VinoHaven.png',
+          media: require('@/assets/images/VinoHaven.png'),
           category: 'Web Development',
           type: 'image',
           link: 'https://russ152002.github.io/latina/ww.html'
