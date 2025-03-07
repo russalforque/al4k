@@ -2,7 +2,7 @@
   "name": "alfk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alfk.github.io/alfk",
+  "homepage": "https://russalforque.github.io/alfk",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

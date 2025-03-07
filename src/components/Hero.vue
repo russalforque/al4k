@@ -1,5 +1,31 @@
 <template>
   <div class="bg-black min-h-screen text-white">
+    <!-- Chat Button -->
+    <div class="fixed bottom-4 right-4 z-[9999] mb-11 md:bottom-6 md:right-6 fade-in" style="animation-delay: 2s;">
+      <button 
+        @click="toggleChat" 
+        class="flex items-center justify-center bg-white text-black w-12 h-12 md:w-14 md:h-14 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95"
+      >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          class="h-6 w-6" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke="currentColor"
+        >
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" 
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Chat Modal -->
+    <ChatModal v-if="showChat" @close="toggleChat" />
+
     <!-- Main Content -->
     <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-16">
       <div class="max-w-8xl mx-auto">
@@ -70,14 +96,18 @@
 
 <script>
 import Footer from './Footer.vue'
+import ChatModal from './ChatModal.vue'
+
 export default {
   name: 'HeroSection',
   components: {
-    Footer
+    Footer,
+    ChatModal
   },
 
   data() {
     return {
+      showChat: false,
       portfolioProjects: [
         {
           title: 'MacBook Pro Mockup',
@@ -96,6 +126,12 @@ export default {
           image: require('@/assets/images/lina.jpg')
         }
       ]
+    }
+  },
+
+  methods: {
+    toggleChat() {
+      this.showChat = !this.showChat
     }
   }
 }
@@ -225,5 +261,15 @@ img, button, a {
 button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+</style>
+
+<style>
+#app {
+  position: relative;
+}
+
+.fixed {
+  position: fixed !important;
 }
 </style> 

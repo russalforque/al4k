@@ -17,9 +17,9 @@
 
         <!-- Social Links -->
         <div class="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 lg:mb-20">
-          <a href="https://www.instagram.com/ru.uss/" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Instagram</a>
-          <a href="https://www.linkedin.com/in/rhazel-alforoque-000643295/" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-          <a href="https://www.facebook.com/rhazel.alforque" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Facebook</a>
+          <a href="https://www.instagram.com/ru.uss/" target="_blank" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.linkedin.com/in/rhazel-alforoque-000643295/" target="_blank" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+          <a href="https://www.facebook.com/rhazel.alforque" target="_blank" class="text-sm sm:text-base text-gray-400 hover:text-white transition-colors">Facebook</a>
         </div>
 
         <!-- Contact Info -->
