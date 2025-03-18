@@ -1,8 +1,8 @@
 {
-  "name": "alfk",
+  "name": "al4k",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://russalforque.github.io/alfk",
+  "homepage": "https://russalforque.github.io/al4k",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
