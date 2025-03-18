@@ -10,14 +10,12 @@
         <div class="flex items-center space-x-3">
           <div class="relative">
             <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
+              <img src="@/assets/images/Rhazel.jpg" alt="Russ" class="w-full h-full object-cover">
             </div>
             <div class="absolute bottom-0 right-0 w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-black"></div>
           </div>
           <div>
-            <h3 class="text-base sm:text-lg font-semibold text-white">Russ AI Assistant</h3>
+            <h3 class="text-base sm:text-lg font-semibold text-white">Russ</h3>
             <p class="text-xs text-gray-400">{{ isTyping ? 'Typing...' : 'Online' }}</p>
           </div>
         </div>
@@ -128,7 +126,7 @@ export default {
     return {
       messages: [
         {
-          text: "👋 Hi! I'm the Russ AI assistant. I can help you learn more about Russ's work, skills, and experience. Try the quick actions below or ask me anything!",
+          text: "👋 Hi! I'm Russ. I can help you learn more about my work, skills, and experience. Try the quick actions below or ask me anything!",
           isUser: false,
           timestamp: this.getCurrentTime(),
           type: 'text'

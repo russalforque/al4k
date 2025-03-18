@@ -98,7 +98,7 @@ export default {
         {
           title: 'VinoHaven',
           description: 'A mobile app designed for a wine shop, offering a seamless browsing and shopping experience for wine enthusiasts',
-          media: require('@/assets/images/VinoHaven.png'),
+          media: require('@/assets/images/Vino.png'),
           category: 'Web Development',
           type: 'image',
           link: 'https://russ152002.github.io/latina/ww.html'
