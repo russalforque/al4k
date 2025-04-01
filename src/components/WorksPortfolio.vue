@@ -93,7 +93,7 @@ export default {
           media: require('@/assets/images/taskflow.png'),
           category: 'UI/UX',
           type: 'image',
-          link: 'https://www.figma.com/proto/CCcEyy6M9UREEkp708GFar/Untitled?node-id=0-1&t=PXrr8Qsf06fQMaQz-1'
+          link: ''
         },
         {
           title: 'VinoHaven',
@@ -101,8 +101,25 @@ export default {
           media: require('@/assets/images/Vino.png'),
           category: 'Web Development',
           type: 'image',
-          link: 'https://russ152002.github.io/latina/ww.html'
+          link: ''
         },
+        {
+          title: 'LjsRealty',
+          description: 'A real estate website showcasing property listings and providing a platform for real estate transactions',
+          media: require('@/assets/images/LjsRealty.png'),
+          category: 'Web Development',
+          type: 'image',
+          link: ''
+        },
+        {
+          title: 'Trieze Porfolio',
+          description: 'A portfolio website showcasing the work of Trieze, a software engineer',
+          media: require('@/assets/images/Trieze.png'),
+          category: 'Web Development',
+          type: 'image',
+          link: ''
+        },
+       
        
    
        

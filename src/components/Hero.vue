@@ -31,7 +31,7 @@
       <div class="max-w-8xl mx-auto">
         <!-- Profile Section -->
         <div class="mb-8 sm:mb-8 fade-in">
-          <img src="@/assets/images/Rhazel.jpg" alt="Profile" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-6 profile-image">
+          <img src="@/assets/images/BassProCaps.jpg" alt="Profile" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 sm:mb-6 profile-image">
           <div class="space-y-1 sm:space-y-2">
             <h2 class="text-xl sm:text-base text-gray-400 slide-up">I'm Russ Alforque 👋</h2>
             <p class="text-gray-400 text-sm sm:text-base slide-up" style="animation-delay: 0.2s">UI/UX & Web Developer.</p>
@@ -75,13 +75,13 @@
             </svg>
             <p class="text-sm sm:text-base">Product Designer @ru.uss</p>
           </div>
-          <div class="flex items-center space-x-3 sm:space-x-4">
+          <div :style="{ animationDelay: '1.8s' }" class="flex items-center space-x-3 sm:space-x-4 fade-in-left">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p class="text-sm sm:text-base">1 Year of Designing Experties</p>
           </div>
-          <div class="flex items-center space-x-3 sm:space-x-4">
+          <div :style="{ animationDelay: '2.0s' }" class="flex items-center space-x-3 sm:space-x-4 fade-in-left">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -111,11 +111,11 @@ export default {
       portfolioProjects: [
         {
           title: 'MacBook Pro Mockup',
-          image: require('@/assets/images/smartphoneUI.jpg')
+          image: require('@/assets/images/lina.jpg')
         },
         {
           title: 'Mac Design',
-          image: require('@/assets/images/UserInterfaceOne.png')
+          image: require('@/assets/images/Trieze.png')
         },
         {
           title: 'Laptop Display',
