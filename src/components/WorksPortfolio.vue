@@ -119,6 +119,14 @@ export default {
           type: 'image',
           link: ''
         },
+        {
+          title: 'roastedcoffee',
+          description: 'A website for a coffee shop, offering a seamless browsing and shopping experience for coffee enthusiasts',
+          media: require('@/assets/images/roastedcoffee.png'),
+          category: 'Web Development',
+          type: 'image',
+          link: ''
+        },
        
        
    

@@ -111,7 +111,7 @@ export default {
       portfolioProjects: [
         {
           title: 'MacBook Pro Mockup',
-          image: require('@/assets/images/lina.jpg')
+          image: require('@/assets/images/roastedcoffee.png')
         },
         {
           title: 'Mac Design',
